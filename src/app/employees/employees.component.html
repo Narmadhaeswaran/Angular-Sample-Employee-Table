@@ -1,0 +1,24 @@
+
+  <body>
+<h1>Employee details</h1>
+<h2>Khaswi store employee details</h2>
+<div class="container">
+  <table class="table"
+  cellspacing="5"
+  cellpadding="13">
+    <tr class="head">
+      <th *ngFor="let column of headers">
+        {{column}}
+
+      </th>
+    </tr>
+
+    <tr *ngFor = "let row of rows" class="row">
+      <td *ngFor="let column of headers" style="text-align:center">
+        {{row[column]}}
+
+      </td>
+    </tr>
+  </table>
+</div>
+</body>
